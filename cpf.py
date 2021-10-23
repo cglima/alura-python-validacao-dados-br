@@ -9,11 +9,12 @@ class ValidaCPF:
         else:
             raise ValueError("CPF inválido!!")
 
-    def cpf_eh_valido(self, documento):
-        if len(documento) == 11:
-            return True
+    def cpf_eh_valido(self, cpf):
+        if len(cpf) == 11:
+            validador = CPF()
+            return validador.validate(cpf)
         else:
-            return False
+            raise ValueError("Quantidade de dígitos inválida!")
 
     def formata_cpf(self):
         cpf_mask = CPF()

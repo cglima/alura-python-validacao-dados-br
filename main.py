@@ -1,6 +1,6 @@
-from CPF import ValidaCPF
+from cpf import ValidaCPF
 
-cpf = "09548756206"
+cpf = "15316264754"
 
 objeto_cpf = ValidaCPF(cpf)
 print(objeto_cpf)
