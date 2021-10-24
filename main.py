@@ -1,4 +1,4 @@
-from documento import CpfCnpj
+from documento import Documento
 
 # cpf = "15316264754"
 #
@@ -7,5 +7,5 @@ from documento import CpfCnpj
 
 exemplo_cnpj = "08027715000140"
 exemplo_cpf = "15316264754"
-documento = CpfCnpj(exemplo_cpf, 'cpf')
+documento = Documento.cria_documento(exemplo_cpf)
 print(documento)
